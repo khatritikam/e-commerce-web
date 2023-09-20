@@ -1,0 +1,251 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "name": "tikam khatri",
+      "mobileNumber": "637 751 6730",
+      "email": "mihirkhatri2597@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 1
+    },
+    {
+      "name": "ramesh kumar ",
+      "mobileNumber": "946 068 2178",
+      "email": "khatritikam2597@gmail.com",
+      "password": "789456",
+      "confirmPassword": "789456",
+      "id": 2
+    }
+  ],
+  "product": [
+    {
+      "name": "alphonso mangoes",
+      "category": "fruits",
+      "image": "./../.././../assets/alpmangos.jpg",
+      "price": 300,
+      "discount": 20,
+      "quantity": 100,
+      "description": "The fruits generally weigh between 150 and 300 grams (5.3 and 10.6 oz), have a rich, creamy, tender texture and delicate, non-fibrous, juicy pulp. ",
+      "id": 1
+    },
+    {
+      "name": "blueberries",
+      "category": "fruits",
+      "image": "./../.././../assets/bb.jpg",
+      "price": 500,
+      "discount": 20,
+      "quantity": 100,
+      "description": "They have simple elliptical leaves that are arranged alternately along the dotted stems. The plants produce clusters of small urn-shaped flowers that range in colour from white to pale pink.",
+      "id": 2
+    },
+    {
+      "name": "grapefruit",
+      "category": "fruits",
+      "image": "./../.././../assets/grape.jpg",
+      "price": 400,
+      "discount": 20,
+      "quantity": 100,
+      "description": "Grapefruit is a natural cross between pomelo and orange and its origin dates back to the 18th century.",
+      "id": 3
+    },
+    {
+      "name": "potato",
+      "category": "vegetables",
+      "image": "./../.././../assets/potato.jpg",
+      "price": 60,
+      "discount": 20,
+      "quantity": 100,
+      "description": "The potato is a starchy food, a tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas.",
+      "id": 4
+    },
+    {
+      "name": "Broccoli",
+      "category": "vegetables",
+      "image": "./../.././../assets/brocoli.jpg",
+      "price": 360,
+      "discount": 10,
+      "quantity": 50,
+      "description": "Fresh broccoli should be dark green in colour, with firm stalks and compact bud clusters. Broccoli is a fast-growing annual plant that grows 60–90 cm (24–35 inches) tall.",
+      "id": 5
+    },
+    {
+      "name": "Green Peas",
+      "category": "vegetables",
+      "image": "./../.././../assets/peas.jpg",
+      "price": 100,
+      "discount": 10,
+      "quantity": 100,
+      "description": "A pea is a most commonly green, golden yellow, or infrequently purple pod-shaped vegetable, widely grown as a cool-season vegetable crop. ",
+      "id": 6
+    },
+    {
+      "name": "Marigold",
+      "category": "flowers",
+      "image": "./../.././../assets/marigold.jpg",
+      "price": 600,
+      "discount": 10,
+      "quantity": 100,
+      "description": "attractive yellow, orange, or red composite flowers that are solitary on the stems or clustered. ",
+      "id": 7
+    },
+    {
+      "name": "Sunflower",
+      "category": "flowers",
+      "image": "./../.././../assets/sunflar.jpg",
+      "price": 600,
+      "discount": 10,
+      "quantity": 100,
+      "description": "The common sunflower has a green erect stem covered in coarse hairs, growing on average around 2m tall. ",
+      "id": 8
+    },
+    {
+      "name": "Daisy",
+      "category": "flowers",
+      "image": "./../.././../assets/daisys.jpg",
+      "price": 600,
+      "discount": 10,
+      "quantity": 100,
+      "description": "It has numerous spoon-shaped, slightly hairy leaves near its base that form a rosette.  ",
+      "id": 9
+    }
+  ],
+  "wishlist": [
+    {
+      "name": "blueberries",
+      "category": "fruits",
+      "image": "./../.././../assets/bb.jpg",
+      "price": 500,
+      "discount": 20,
+      "quantity": 100,
+      "description": "They have simple elliptical leaves that are arranged alternately along the dotted stems. The plants produce clusters of small urn-shaped flowers that range in colour from white to pale pink.",
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "orderNumber": 1458,
+      "orderDate": "2023-08-27T06:37:31.568Z",
+      "totalAmount": 1304,
+      "orderStatus": "cancelled",
+      "address": {
+        "addressLine": "16E/5 CHB",
+        "city": "Jodhpur",
+        "state": "Rajsthan",
+        "country": "India",
+        "pinCode": "342001"
+      },
+      "orderProduct": [
+        {
+          "id": 2,
+          "name": "blueberries",
+          "discription": "They have simple elliptical leaves that are arranged alternately along the dotted stems. The plants produce clusters of small urn-shaped flowers that range in colour from white to pale pink.",
+          "discount": 20,
+          "category": "fruits",
+          "price": 500,
+          "image": "./../.././../assets/bb.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "name": "Broccoli",
+          "discription": "Fresh broccoli should be dark green in colour, with firm stalks and compact bud clusters. Broccoli is a fast-growing annual plant that grows 60–90 cm (24–35 inches) tall.",
+          "discount": 10,
+          "category": "vegetables",
+          "price": 360,
+          "image": "./../.././../assets/brocoli.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "Marigold",
+          "discription": "attractive yellow, orange, or red composite flowers that are solitary on the stems or clustered. ",
+          "discount": 10,
+          "category": "flowers",
+          "price": 600,
+          "image": "./../.././../assets/marigold.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "orderNumber": 2889,
+      "orderDate": "2023-08-27T06:38:43.791Z",
+      "totalAmount": 178,
+      "orderStatus": "cancelled",
+      "address": {
+        "addressLine": "16E/5 CHB",
+        "city": "Jodhpur",
+        "state": "Rajsthan",
+        "country": "India",
+        "pinCode": "342001"
+      },
+      "orderProduct": [
+        {
+          "id": 6,
+          "name": "Green Peas",
+          "discription": "A pea is a most commonly green, golden yellow, or infrequently purple pod-shaped vegetable, widely grown as a cool-season vegetable crop. ",
+          "discount": 10,
+          "category": "vegetables",
+          "price": 100,
+          "image": "./../.././../assets/peas.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "discription": "The potato is a starchy food, a tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas.",
+          "discount": 20,
+          "category": "vegetables",
+          "price": 60,
+          "image": "./../.././../assets/potato.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "orderNumber": 2614,
+      "orderDate": "2023-09-18T12:19:57.439Z",
+      "totalAmount": 360,
+      "orderStatus": "New Order",
+      "address": {
+        "addressLine": "16E/5 CHB",
+        "city": "JODHPUR",
+        "state": "RAJSTHAN",
+        "country": "INDIA",
+        "pinCode": "342001"
+      },
+      "orderProduct": [
+        {
+          "id": 3,
+          "name": "grapefruit",
+          "discription": "Grapefruit is a natural cross between pomelo and orange and its origin dates back to the 18th century.",
+          "discount": 20,
+          "category": "fruits",
+          "price": 400,
+          "image": "./../.././../assets/grape.jpg",
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

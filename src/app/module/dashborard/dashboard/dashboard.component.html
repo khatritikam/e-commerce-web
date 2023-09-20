@@ -1,0 +1,47 @@
+<div class="d-flex flex-column w-75 contnir">
+    <mat-card class="mt-4 w-100">
+        <mat-card-content>
+            <div>
+                <h1 class="text-center text-uppercase p-0">fruits</h1>
+            </div>
+            <div class="d-flex justify-content-around card align-items-center">
+                <div *ngFor="let product of fruits">
+                    <app-card [products]="product" (productDetailId)="goToDetailPage($event)"></app-card>
+                </div>
+            </div>
+            <div class="text-center">
+                <button mat-flat-button color="primary" routerLink="/fruits">view more</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="mt-4 w-100">
+        <mat-card-content>
+            <div>
+                <h1 class="text-center text-uppercase p-0">vegetables</h1>
+            </div>
+            <div class="d-flex justify-content-around card  align-items-center">
+                <div *ngFor="let product of vegetables">
+                    <app-card [products]="product" (productDetailId)="goToDetailPage($event)"></app-card>
+                </div>
+            </div>
+            <div class="text-center">
+                <button mat-flat-button color="primary" routerLink="/vegetables">view more</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="mt-4 w-100">
+        <mat-card-content>
+            <div>
+                <h1 class="text-center text-uppercase p-0">Flowers</h1>
+            </div>
+            <div class="d-flex justify-content-around card align-items-center">
+                <div *ngFor="let product of flowers">
+                    <app-card [products]="product" (productDetailId)="goToDetailPage($event)"></app-card>
+                </div>
+            </div>
+            <div class="text-center">
+                <button mat-flat-button color="primary" routerLink="/flowers">view more</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

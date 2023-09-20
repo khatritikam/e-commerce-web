@@ -1,0 +1,51 @@
+.leaders-container{
+    margin-top: 30px;
+    width: 900px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.leader-card-container{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+}
+.leader-detail{
+    height: 100px;
+
+}
+.leader-img{
+    object-fit: cover;
+    border-radius: 20% 20% 15% 30%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border: 0;
+    vertical-align: middle;
+}
+.leader-name{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.leader-post{
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    font-size: 21px !important;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 25px;
+    margin: 0 0 10px;
+    font-weight: lighter
+}
+.leader-card{
+    text-transform: capitalize;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 25px;
+}

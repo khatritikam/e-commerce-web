@@ -1,0 +1,15 @@
+<div class="leaders-container">
+    <div class="leader-card-container">
+        <div *ngFor="let leader of leaders" class="d-flex">
+            <div class="d-flex flex-column justify-content-center leader-card">
+                <div class="leader-img-container">
+                    <img [src]="leader.leaderImgSrc" alt="" width="100%" height="250px" class="leader-img">
+                </div>
+                <div class="leader-detail">
+                    <h3 class="leader-name">{{leader.leaderName}}</h3>
+                    <p class="leader-post">{{leader.leaderPost}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

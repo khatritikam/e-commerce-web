@@ -1,0 +1,68 @@
+<ng-container *ngIf="orders?.length != 0">
+    <div class="d-flex flex-column">
+        <div class="border-4 border-bottom ">
+            <h2 class="text-capitalize pt-4 ps-5 fs-4">my orders</h2>
+        </div>
+        <div class="d-flex flex-column w-75 justify-content-center align-items-center orders-container ">
+                <div *ngFor="let ordre of orders" class="d-flex flex-column w-100 border border-2 rounded mb-3 bg-white">
+                    <div class="d-flex flex-row align-items-center border-2 border-bottom border-secondary bg-color p-1 w-100">
+                        <div class="bg-primary align-items-center">
+                            <h1 class="pt-1 ps-5 pe-5 pb-1 m-0 text-white">#{{ordre.orderNumber}}</h1>
+                        </div>
+                        <div class=" w-100">
+                            <h2 class="float-end pt-1 ps-5 pe-3 pb-1 m-0 text-capitalize text-secondary">order status: <span class="text-dark">{{ordre.orderStatus}}</span></h2>
+                        </div>
+                    </div>
+                    <div *ngFor="let product of ordre.orderProduct" class="d-flex flex-column m-1 border-1 border-bottom ">
+                        <div class="d-flex flex-row justify-content-around">
+                            <div class="img-container">
+                                <img src="{{product.image}}" alt="" width="100%" height="100px">  
+                            </div>
+                            <div class="name-container">
+                                <h2 class="text-uppercase m-0">{{product.name}}</h2>
+                                <p id="seller">Seller:Org Farm <span><img src="./../../../assets/logo.webp" height="25px"
+                                    width="25px"></span>
+                              </p>
+                            </div>
+                            <div class="offer-container">
+                                <h2 class="text-capitalize">{{product.discount}}% flat off</h2>
+                            </div>
+                            <div class="price-container">
+                                <h2>₹{{product.price}}</h2>
+                            </div>
+                            <div>
+                                <h2>{{product.quantity}}kg</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between ps-2 pe-2 ">
+                        <div class="order-on-container">
+                            <h3 class="text-capitalize text-secondary mb-1">ordered on <span class="text-dark fw-1">{{ordre.orderDate | date:'short'}}</span></h3>
+                            <p class="text-capitalize m-0 text-danger">note: Delivery Charges ₹40 add after discount</p>
+                        </div>
+                        <div class="total-container">
+                            <h3 class="text-capitalize text-secondary mb-1">order total: <span class="text-dark fw-1">₹{{ordre.totalAmount | number: '1.2-2'}}</span></h3>
+                        </div>
+                        <div class="action-container">
+                            <button mat-raised-button color="warn" class="btn-cancle"  (click)="cancelOrder(ordre.id)">cancel</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+</ng-container>
+<ng-container *ngIf="orders?.length === 0">
+    <div class="contnir p-4">
+        <div class="d-flex flex-column card  h-75">
+            <div class="border-bottom border-2 p-3 w-100">
+                <h2 class="card-title  text-capitalize">my Orders</h2>
+            </div>
+            <div class="w-100 p-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/emptyOrders_f13d28.png"
+                    alt="" height="162px">
+                <h3 class="m-0 mt-5 msg">You have no orders</h3>
+                <button mat-flat-button color="primary" class="mt-2" routerLink="/dashboard">Start Shopping</button>
+            </div>
+        </div>
+    </div>
+</ng-container>

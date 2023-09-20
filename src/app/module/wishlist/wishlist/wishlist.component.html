@@ -1,0 +1,55 @@
+<ng-container *ngIf="products?.length != 0"> <!--  *ngIf="products.length != 0" -->
+    <div class="contnir p-4">
+        <div class="d-flex flex-column card  h-75">
+            <div class="border-bottom border-2 p-3 w-100">
+                <h2 class="card-title  text-capitalize">my wishlist </h2>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="border-bottom border-1 list-row" *ngFor="let product of products">
+                    <div class="img-container">
+                        <img src="{{product.image}}" alt="" class="img">
+                    </div>
+                    <div class="detail-container">
+                        <div class="col col-10-12">
+                            <div class="product-name">{{product.name}}</div>
+                            <div>
+                                <span class="text-capitalize text-success"><img src="./../../../assets/logo.webp"
+                                        height="25px" width="25px">
+                                    {{product.category}} by org farm</span>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">₹{{product.price}}</div>
+                                <div class="total-discount">₹{{(product.discount/100)*product.price}}</div>
+                                <div class="discount"><span>{{product.discount}}%</span></div>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="icon-container">
+                                <span class="">
+                                    <img (click)="removeproduct(product.id)"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDEyIDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLjUuNWgxNXYxNWgtMTV6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0MyQzJDMiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMSAxMy44MzNjMCAuOTE3Ljc1IDEuNjY3IDEuNjY3IDEuNjY3aDYuNjY2Yy45MTcgMCAxLjY2Ny0uNzUgMS42NjctMS42Njd2LTEwSDF2MTB6bTEwLjgzMy0xMi41SDguOTE3TDguMDgzLjVIMy45MTdsLS44MzQuODMzSC4xNjdWM2gxMS42NjZWMS4zMzN6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                                        class="delete-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="products?.length === 0">
+    <div class="contnir p-4">
+        <div class="d-flex flex-column card  h-75">
+            <div class="border-bottom border-2 p-3 w-100">
+                <h2 class="card-title  text-capitalize">my wishlist</h2>
+            </div>
+            <div class="w-100 p-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/mywishlist-empty_39f7a5.png"
+                    alt="" height="162px">
+                <h3 class="m-0 mt-5">Empty Wishlist</h3>
+                <h5>You have no items in your wishlist. Start adding!</h5>
+            </div>
+        </div>
+    </div>
+</ng-container>

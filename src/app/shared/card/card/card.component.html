@@ -1,0 +1,19 @@
+<mat-card class="example-card mb-3 product-card">
+    <mat-card-header>
+        <mat-card-title class="text-uppercase p-1">{{products.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{products.image}}" height="225px" width="100%" class="border-0 img">
+    <mat-card-content>
+        <p class="discription">{{products.description.slice(0,100)}}...</p>
+        <div class="d-flex flex-row justify-content-between">
+            <h4 class="m-0">{{products.price | number: '1.2-2'  | currency:'INR'}}</h4>
+            <h4 class="text-danger m-0">{{products.discount | number: '1.2-2'}}% Off </h4> 
+        </div>
+    </mat-card-content> 
+    <mat-card-actions>
+        <!-- <button mat-flat-button color="warn" class="m-1 text-uppercase"><mat-icon>bolt</mat-icon>buy now</button> -->
+        <!-- <button mat-flat-button color="warn" class="m-1 text-uppercase w-100" (click)=" addToCard(products.id)"><mat-icon>shopping_cart</mat-icon>add to cart</button> -->
+        <button mat-flat-button color="warn" class="m-1 text-uppercase w-100"   (click)="showDetail(products)"><mat-icon>info_i</mat-icon>show details</button>
+    </mat-card-actions>
+</mat-card>
+

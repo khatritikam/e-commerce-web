@@ -1,0 +1,10 @@
+<div class="d-flex flex-column w-75 contnir">
+    <div class="p-3">
+        <h1 class="fs-1">Fruits</h1>
+    </div>
+    <div class="d-flex justify-content-around body-color align-items-center card">
+        <div *ngFor="let product of products">
+            <app-card [products]="product" (productDetailId)="goToDetailPage($event)"></app-card>
+        </div>
+    </div>
+</div>

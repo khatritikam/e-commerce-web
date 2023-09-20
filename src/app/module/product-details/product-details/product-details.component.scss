@@ -1,0 +1,46 @@
+.contnir{
+    margin: 0px auto;
+    }
+.img{
+    width: 400px;
+}
+.w-1{
+    width: 30%;
+}
+.fstdiv{
+    justify-content: space-around !important; 
+}    
+.wishbtn{
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--color-grey-grade1);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    padding: 9px 12px 12px 9px;
+    background: var(--color-white-bg);
+}
+.wishicon{
+    display: inline-flex;
+}
+.bgicon{
+    fill: #c2c2c2;
+}
+.bgiconred{
+    fill: #ff4343;
+    opacity: 0.9;
+}
+.hvr:hover{
+    color: blue !important;
+}
+.sharebtn{
+    background:transparent;
+    border: none;
+}
+.icon-animation{
+    animation: 0.2s ease 0.3s forwards;
+}
+@keyframes ease  {
+    from {background-color: #ff4343;}
+    to {background-color:#fff;}
+  }

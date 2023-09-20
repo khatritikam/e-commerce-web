@@ -1,0 +1,23 @@
+.heading{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.heading-para{
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.list-disc{
+    list-style: disc;
+}
+.content-links{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
